@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<meta name="Author" content="Eivind Morch">
+		<title>Arrays</title>
+		
+		<script>
+			var randomInt = Math.floor(Math.random()*10);
+			var movies = ["The Godfather", "Best Kept Secret", "Shawshank Redemption", "Leviathan", "Seven Samurai", "Balthazar", "Lawrence of Arabia", "Sweet Smell of Success", "Army of Shadows", "The Tribe"]		
+			console.log("MOVIE LIST: " + movies + "\n" + "RANDOM INT: " + randomInt)
+			
+			addEventListener("load", function(e) {
+				document.getElementById("print").innerHTML = "Random movie: " + movies[randomInt];
+			})
+		</script>
+
+	</head>
+	
+	<body>
+		<output id="print"></output>
+	</body>
+
+</html>

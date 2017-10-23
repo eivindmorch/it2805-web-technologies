@@ -1,0 +1,155 @@
+body {
+	margin: 0px;
+	padding: 0px;
+	background-color:#3D6286
+}
+
+
+
+#main {
+	width: 700px;
+	margin-right: auto;
+	margin-left: auto;
+	margin-top: 0px;
+	padding: 10px 30px;
+	background-color: white;
+	box-shadow: 0px 1px 4px black;
+	border-bottom-left-radius: 5px;
+	border-bottom-right-radius: 5px;
+}
+
+header {
+	width: 100%px;
+	margin-left: auto;
+	margin-right: auto;
+	font-family: Arial, Helvetica, sans-serif;
+	margin-top: 0px;
+	padding-top: 10px;
+}
+
+h1, h2, h3, h4 {
+	font-family: Arial, Helvetica, sans-serif;
+}
+
+.centered {
+	text-align: center;
+}
+
+.top_header nav	{
+	background-color: #292929;
+	color: white;
+	padding: 5px 0px;
+	width: 760px;
+	margin-left: auto;
+	margin-right: auto;
+	border-top-left-radius: 5px;
+	border-top-right-radius: 5px;
+	box-shadow: 0px 4px 4px black;
+}
+
+footer {
+	width: 700px;
+	margin-left: auto;
+	margin-right: auto;
+	margin-bottom: 10px;
+	margin-top: 10px;
+	font-size: smaller;
+	font-family: Arial, Helvetica, sans-serif;
+}
+
+img {
+	border-radius: 5px;
+}
+
+hr {
+	background:#D0D0D0; 
+	border: 0; 
+	height: 2px;
+	border-radius: 20px;
+}
+
+p {
+	font-family: Georgia, serif;
+	font-size: 14px;
+}
+
+a:link, a:visited {
+	color: #0052A3;
+	text-decoration: none;
+}
+
+a:hover:not(.anchor) {
+	color: #99CCFF;
+	text-decoration: none;
+}
+
+.timetable {
+	border-collapse: collapse;
+}
+		
+.timetable td { 
+	border: 1px solid grey;
+	width: 115px;
+	height: 30px;
+}
+
+.timetable th {
+	background-color: #FFFFFF;
+}
+
+.timetable tr:nth-child(even) {
+	background-color: #F0F0F0;
+}
+
+.EXPH0004 {
+	background-color: #FFCC99;
+}
+
+.IT2805 {
+	background-color: #66CCFF;
+}
+
+.MA1101 {
+	background-color: #FFCCFF;
+}
+
+.TDT4120 {
+	background-color: #CCFFCC;
+}
+
+.EXPH0004, .IT2805, .MA1101, .TDT4120 {
+	vertical-align: text-top;
+}
+
+.timetext {
+	font-size: 90%;
+	text-align: center;
+	width: 85px !important;
+}
+
+nav ul {
+	padding: 0px;
+	margin:0px;
+}
+
+nav li {
+	display: inline;
+	margin: 0px 5px 0px 0px;
+}
+
+.top_header a:link{
+	color: #E6E6E6;
+}
+
+.top_header a:visited{
+	color: #E6E6E6;
+}
+
+.top_header a:hover{
+	color: #C2E0FF;
+}
+
+.white_text {
+	color:white;
+}
+

@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+	
+	<xs:element name="bank" type="bankType">
+		
+		<xs:key name="account_id">
+			<xs:selector xpath="accounts/savings_accounts/savings_account | accounts/checking_accounts/checking_account"/>
+			<xs:field xpath="@id"/>
+		</xs:key>
+		
+		<xs:key name="customer_id">
+			<xs:selector xpath="customers/customer"/>
+			<xs:field xpath="@id"/>
+		</xs:key>
+		
+		<xs:keyref name="accountRef" refer="account_id">
+			<xs:selector xpath="customer_accounts/customer_account"/>
+			<xs:field xpath="@account_id"/>
+		</xs:keyref>
+		
+		<xs:keyref name="customerRef" refer="customer_id">
+			<xs:selector xpath="customer_accounts/customer_account"/>
+			<xs:field xpath="@customer_id"/>
+		</xs:keyref>
+		
+	</xs:element>
+	
+	<xs:complexType name="bankType">
+		<xs:sequence>
+			<xs:element name="accounts" type="accountsType"/>
+			<xs:element name="customers" type="customersType"/>
+			<xs:element name="customer_accounts" type="customer_accountsType"/>
+		</xs:sequence>
+	</xs:complexType>
+
+	<xs:complexType name="accountsType">
+		<xs:sequence>
+			<xs:element name="savings_accounts" type="savings_accountsType"/>
+			<xs:element name="checking_accounts" type="checking_accountsType"/>
+		</xs:sequence>
+	</xs:complexType>
+		
+		
+	<xs:complexType name="savings_accountsType">
+		<xs:sequence>
+			<xs:element name="savings_account" type="savings_accountType" minOccurs="0" maxOccurs="unbounded"/>
+		</xs:sequence>
+	</xs:complexType>
+			
+	<xs:complexType name="savings_accountType">
+		<xs:complexContent>
+			<xs:extension base="commonAccountType">
+				<xs:attribute name="interest" type="xs:decimal" use="required"/>
+			</xs:extension>
+		</xs:complexContent>
+	</xs:complexType>
+					
+	<xs:complexType name="checking_accountsType">
+		<xs:sequence>
+			<xs:element name="checking_account" type="commonAccountType" minOccurs="0" maxOccurs="unbounded"/>
+		</xs:sequence>
+	</xs:complexType>
+	
+
+	<xs:complexType name="commonAccountType">
+		<xs:sequence>
+			<xs:element name="balance" type="balanceType"/>
+		</xs:sequence>
+		<xs:attribute name="id" type="xs:string" use="required"/>
+	</xs:complexType>
+		
+	<xs:simpleType name="balanceType">
+		<xs:restriction base="xs:decimal">
+			<xs:minExclusive value="-5000"/>
+		</xs:restriction>
+	</xs:simpleType>
+	
+	
+	<xs:complexType name="customersType">
+		<xs:sequence>
+			<xs:element name="customer" type="customerType" minOccurs="0" maxOccurs="unbounded"/>
+		</xs:sequence>
+	</xs:complexType>
+	
+	<xs:complexType name="customerType">
+		<xs:sequence>
+			<xs:element name="name" type="xs:string"/>
+			<xs:element name="address" type="xs:string"/>
+		</xs:sequence>
+		<xs:attribute name="id" type="xs:string" use="required"/>
+	</xs:complexType>
+	
+	
+	
+	<xs:complexType name="customer_accountsType">
+		<xs:sequence>
+			<xs:element name="customer_account" type="customer_accountType" minOccurs="0" maxOccurs="unbounded"/>
+		</xs:sequence>
+	</xs:complexType>
+
+	<xs:complexType name="customer_accountType">
+		<xs:attribute name="customer_id" type="xs:string" use="required"/>
+		<xs:attribute name="account_id" type="xs:string" use="required"/>
+	</xs:complexType>
+	
+	
+</xs:schema>

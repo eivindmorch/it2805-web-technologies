@@ -1,0 +1,247 @@
+﻿<!DOCTYPE html>
+
+<html>
+	
+	<head>
+		<meta charset="UTF-8">
+		<meta name="author" content="Eivind Morch">
+		<title>Timetable - Eivind Morch</title>
+		
+		<style type="text/css">
+		
+			html {
+				display: table;
+				margin: auto;
+			}
+			
+			body {
+				display: table-cell;
+				vertical-align: middle;
+			}
+			
+		
+			.timetable {
+				border-collapse: collapse;
+			}
+		
+			.timetable td { 
+				border: 1px solid grey;
+				width: 115px;
+				height: 30px;
+			}
+		
+			.timetable th {
+				background-color: #FFFFFF;
+			}
+			
+			.timetable tr:nth-child(even) {
+				background-color: #F0F0F0;
+			}
+			
+			.EXPH0004 {
+				background-color: #FFCC99;
+			}
+			
+			.IT2805 {
+				background-color: #66CCFF;
+			}
+			
+			.MA1101 {
+				background-color: #FFCCFF;
+			}
+			
+			.TDT4120 {
+				background-color: #CCFFCC;
+			}
+			
+			.EXPH0004, .IT2805, .MA1101, .TDT4120 {
+				vertical-align: text-top;
+			}
+			
+			.timetext {
+				font-size: 90%;
+				text-align: center;
+				width: 85px !important;
+			}
+			
+			h2 {
+				padding: 20px 0px 0px 0px;
+				line-height: 5px
+			}
+			
+			p {
+				text-align: left;
+				width: 700px
+			}
+			
+			ul {
+				padding: 0px;
+			}
+		
+			li {
+				display: inline;
+				margin: 0px 5px 0px 0px;
+			}
+			
+			hr {
+			background:#D0D0D0; 
+			border: 0; 
+			height: 2px;
+
+		</style>
+	</head>
+	
+	<body>
+		<h1>Timetable for Eivind Morch, fall 2014</h1>
+		<ul>
+		<li> Courses: </li>
+		<li> <a href="#IT2805">IT2805</a> </li>
+		<li> <a href="#MA1101">MA1101</a> </li>
+		<li> <a href="#TDT4120">TDT4120</a> </li>
+		<li> <a href="#EXPH0004">EXPH0004</a> </li>
+		</ul>
+		
+		<hr/>
+		<br/>
+		
+		<!-- Kan ikke bruke <thead> og <tbody> pga. en bug med border collapse i firefox ved rowspan="3" -->
+		<table class="timetable">
+			<tr>
+				<th></th>
+				<th>Mandag</th>
+				<th>Tirsdag</th>
+				<th>Onsdag</th>
+				<th>Torsdag</th>
+				<th>Fredag</th>
+			</tr>
+			<tr> 
+				<td class="timetext">08:15-09:00</td>
+				<td></td>
+				<td></td>
+				<td class="IT2805" rowspan="2">IT2805 <br/> Øving</td>
+				<td></td>
+				<td class="EXPH0004" rowspan="2">EXPH0004 <br/> Forelesning</td>
+			</tr>
+			<tr>
+				<td class="timetext">09:15-10:00</td>
+				<td></td>
+				<td></td>
+				<td></td>
+			</tr>
+			<tr>
+				<td class="timetext">10:15-11:00</td>
+				<td></td>
+				<td class="MA1101" rowspan="2">MA1101 <br/> Forelesning</td>
+				<td class="MA1101" rowspan="2">MA1101<br/> Forelesning</td>
+				<td></td>
+				<td class="TDT4120" rowspan="2">TDT4120 <br/> Forelesning</td>
+			</tr>
+			<tr>
+				<td class="timetext">11:15-12:00</td>
+				<td></td>
+				<td></td>
+			</tr>
+			<tr>
+				<td class="timetext">12:15-13:00</td>
+				<td></td>
+				<td class="TDT4120" rowspan="3">TDT4120 <br/> Øving</td>
+				<td></td>
+				<td></td>
+				<td class="IT2805" rowspan="2">IT2805 <br/> Øving</td>
+			</tr>
+			<tr>
+				<td class="timetext">13:15-14:00</td>
+				<td></td>
+				<td></td>
+				<td></td>
+			</tr>
+			<tr>
+				<td class="timetext">14:15-15:00</td>
+				<td class="IT2805" rowspan="2">IT2805 <br/> Forelesning</td>
+				<td></td>
+				<td></td>
+				<td></td>
+			</tr>
+			<tr>
+				<td class="timetext">15:15-16:00</td>
+				<td></td>
+				<td></td>
+				<td></td>
+				<td></td>
+			</tr>
+			<tr>
+				<td class="timetext">16:15-17:00</td>
+				<td></td>
+				<td></td>
+				<td></td>
+				<td class="EXPH0004" rowspan="2">EXPH0004 <br/> Forelesning</td>
+				<td></td>
+			</tr>
+			<tr>
+				<td class="timetext">17:15-18:00</td>
+				<td></td>
+				<td></td>
+				<td></td>
+				<td></td>
+			</tr>
+			<tr>
+				<td class="timetext">18:15-19:00</td>
+				<td></td>
+				<td></td>
+				<td></td>
+				<td></td>
+				<td></td>
+			</tr>
+			<tr>
+				<td class="timetext">19:15-20:00</td>
+				<td></td>
+				<td></td>
+				<td></td>
+				<td></td>
+				<td></td>
+			</tr>
+		</table>
+
+		<br/>
+		
+		<section>
+		<a id="IT2805"><h2>IT2805 - Web Technologies</h2></a>
+		<p>The focus in this course is on the World Wide Web as a platform for interactive applications, content publishing and social services. The development of web-based applications requires knowledge about the underlying technology and the formats and standards the web is based upon. In this course you will learn about the HTTP communication protocol, the markup languages HTML, XHTML and XML, the CSS and XSLT standards for formatting and transforming web content, event-based programming on the client-side, interactive graphics and multimedia content on the web. The course will also give an introduction in web search and indexing as well as information management aspects such as digital rights and standards for describing web content.</p>
+		<p><a href="http://www.ntnu.edu/studies/courses/IT2805">Course website</a></p>
+		</section>
+		
+		<hr/>
+		
+		<section>
+		<a id="MA1101"><h2>MA1101 - Basic Calculus I</h2></a>
+		<p>Basic properties of real numbers and real functions of a real variable; limits, continuity, differentiation and integration. The fundamental theorem of calculus and its applications are central. There is an emphasis on rigour.</p>
+		<p><a href="http://www.ntnu.edu/studies/courses/MA1101">Course website</a></p>
+		</section>
+		
+		<hr/>
+		
+		<section>
+		<a id="TDT4120"><h2>TDT4120 - Algorithms and Data Structures</h2></a>
+		<p>Methods for analysing the efficiency of algorithms, divide and conquer techniques, recursive solution methods. Methods for ordering, searching and sorting. Data structures for efficient retrieval of data, dynamic programming and greedy algorithms. Data structures for implementing graphs and networks, as well as methods for traversals and searches. Algorithms for finding the best path(s) and matchings, spanning trees and maximum flow. Theory of problem complexity. Algorithms are expressed in a language independent fashion. 
+		<p><a href="http://www.ntnu.edu/studies/courses/TDT4120">Course website</a></p>
+		</section>
+		
+		<hr/>
+		
+		<section>
+		<a id="EXPH0004"><h2>EXPH0004 - Examen philosophicum for Science and Technology</h2></a>
+		<p>The course provides a wider perspective on university studies at NTNU through an introduction to the philosophy and history of science and philosophy of science, ethics and political philosophy of relevance to students of science and technology. The common part draws lines from Antiquity?s worldview to discussions in our own time. It takes up different views of nature, man, knowledge, science, crafts/art, ethics, politics, rationality and argumentation from both a historical and systematic perspective. The variant part focuses on ethics both as systematic theory and in an applied perspective with particular focus on the relationship between science/technology and ethics.</p>
+		<p><a href="http://www.ntnu.edu/studies/courses/EXPH0004">Course website</a></p>
+		</section>
+		
+		<br/>
+		<hr/>
+		<p>
+			<a href="../../mainpage.html" title="Back to the home page">HOME</a> |
+			<a href="../index.html" title="Back to the assignment index">ASSIGNMENT INDEX</a> | 
+			<a href="#" title="To the top of this page">TOP</a>
+		</p>
+
+	</body>
+	
+</html>

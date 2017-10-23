@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE news SYSTEM "news.dtd">
+<news>
+	<article>
+		<heading>Ebola-utbrudd i Norge</heading>
+		<body>
+			<paragraph>
+				En ny form for ebola har kommet til norge, og har til nå utslettet hele sør- og vestlandet.
+				Regjeringen og kongehuset er evakuert og i sikkerhet.
+			</paragraph>
+			<paragraph>
+				Du bør være redd!
+			</paragraph>
+			<paragraph>
+				Sist oppdatert 14.11.14
+			</paragraph>
+		</body>
+	</article>
+	<article>
+		<heading>
+			Julen 2014
+		</heading>
+		<body>
+			<paragraph>
+				Storgata Legekontor holder stengt fra 20. desember til 3. januar i år. Dette på grunn av lite pågang i tidligere år rundt samme tid.
+			</paragraph>
+			<paragraph>
+				Skulle du bli syk i denne perioden og ikke har mulighet til å vente til etter jul, 
+				ber vi deg kontakte legevakta i Oslo på tlf. 22 93 22 93.
+			</paragraph>
+			<paragraph>
+				Sist oppdatert 10.11.14
+			</paragraph>
+		</body>
+	</article>
+</news>

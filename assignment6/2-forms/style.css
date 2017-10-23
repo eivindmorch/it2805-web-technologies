@@ -1,0 +1,61 @@
+body {
+	margin: 0px;
+	padding: 0px;
+	background-color: #F2F8FF;
+}
+
+header {
+	text-align: center;
+	font-family: sans-serif;
+
+}
+
+#main {
+	width: 700px;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+fieldset {
+	border: solid;
+	border-width: 2px;
+	border-color: grey;
+	margin-bottom: 20px;
+	background-color: #FFFFE9;
+}
+
+legend {
+	font-family: sans-serif;
+	font-weight: bold;
+}
+
+::-webkit-input-placeholder {
+   font-size: smaller;
+}
+
+:-moz-placeholder {
+   font-size: smaller;
+}
+
+::-moz-placeholder {
+   font-size: smaller;
+}
+
+:-ms-input-placeholder {  
+   font-size: smaller;
+}
+
+p {
+	line-height: 140%;
+	margin-bottom: 20px;
+}
+
+input:not([type="submit"]) {
+	border: solid;
+	border-color: grey;
+	border-width: 1px;
+}
+
+input:not([type="radio"]):not([type="checkbox"]):invalid {
+	outline: 1px solid red;
+}

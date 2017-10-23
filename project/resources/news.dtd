@@ -1,0 +1,6 @@
+<!ELEMENT news (article*)>
+
+<!ELEMENT article (heading, body)>
+<!ELEMENT heading (#PCDATA)>
+<!ELEMENT body (paragraph*)>
+<!ELEMENT paragraph (#PCDATA)>

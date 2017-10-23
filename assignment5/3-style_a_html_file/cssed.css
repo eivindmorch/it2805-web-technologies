@@ -1,0 +1,66 @@
+
+body {
+	margin: 0px;
+	background-color: #FFFDFB;
+
+}
+
+header {
+	background-color: #202020;
+	color: white;
+	text-align: center;
+	padding: 5px;
+	font-family: Arial, Helvetica, sans-serif;
+}
+
+header h1 {
+	line-height: 90%;
+}
+
+#articleHeader {
+	background-color: transparent;
+	color: black;
+	text-align: left;
+	font-size: 250%;
+	font-weight: bold;
+	margin-top: 15px;
+	margin-bottom: 30px;
+	
+}
+
+h1 {
+	margin:10px 0px 0px 0px;
+}
+
+#main {
+	margin-left: auto;
+	margin-right: auto;
+	width: 600px;
+}
+
+img {
+	border-radius: 10px;
+}
+
+#leadParagraph {
+	font-family: Arial, Helvetica, sans-serif;
+}
+
+#byline {
+	font-size: smaller;
+	line-height: 95%;
+}
+
+#bodyText {
+	font-family: Georgia, serif;
+}
+
+articleTitle {
+	font-family: Arial, Helvetica, sans-serif;
+	font-weight: bold;
+}
+
+a {
+	color: black;
+	text-decoration: none;
+}

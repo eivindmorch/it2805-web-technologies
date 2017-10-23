@@ -1,0 +1,38 @@
+html {
+	display: table;
+	margin: auto;
+}
+
+body {
+	display: table-cell;
+	vertical-align: middle;
+		padding: 0px 0px 0px 20px;
+}
+
+p {
+	text-align: left;
+	width: 700px;
+	padding: 0px 0px 0px 10px;
+}
+
+ul {
+	width: 700px;
+}
+
+hr {
+	background:#D0D0D0; 
+	border: 0; 
+	height: 2px;
+}
+
+h2 {
+	padding: 40px 0px 0px 0px;
+}
+
+h3 {
+	padding: 20px 0px 0px 0px;
+}
+
+article {
+		padding: 0px 0px 0px 10px;
+}
